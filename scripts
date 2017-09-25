@@ -36,8 +36,7 @@ on init
 	read_persistent_var($Releasish)
 
 	{when you need to hide your knobs, use this: 
-	hide_part(<knob_name>,$HIDE_WHOLE_CONTROL)
-	}
+	hide_part(<knob_name>,$HIDE_WHOLE_CONTROL)}
 
 end on
 
