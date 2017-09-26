@@ -1,13 +1,12 @@
-{NEEDS TO BE TESTED. NO IDEA IF IT WORKS!!!!}
 on init
-	make_perfview
+    make_perfview
     set_ui_height_px (232)
     set_control_par_str ($INST_WALLPAPER_ID,$CONTROL_PAR_PICTURE,"CascadesRed")
 
 	declare $count
 
 	declare ui_slider $Attackish (1000, 1000000)
-	declare ui_slider $Releasish (100,1000000,1)
+	declare ui_slider $Releasish (1000, 1000000)
 
 	{Knob Design by az: https://www.g200kg.com/en/webknobman/gallery.php?m=p&p=51
 	THANK YOU az!!!!!!}
@@ -16,11 +15,11 @@ on init
 	set_control_par_str(get_ui_id($Releasish), $CONTROL_PAR_PICTURE, "WhiteKnob")
 
 	{ hide the slider parts }
-    hide_part($Attackish,  $HIDE_PART_BG .or. $HIDE_PART_MOD_LIGHT .or. $HIDE_PART_TITLE .or. $HIDE_PART_VALUE)
-    hide_part($Releasish,  $HIDE_PART_BG .or. $HIDE_PART_MOD_LIGHT .or. $HIDE_PART_TITLE .or. $HIDE_PART_VALUE)
+    	hide_part($Attackish,  $HIDE_PART_BG .or. $HIDE_PART_MOD_LIGHT .or. $HIDE_PART_TITLE .or. $HIDE_PART_VALUE)
+    	hide_part($Releasish,  $HIDE_PART_BG .or. $HIDE_PART_MOD_LIGHT .or. $HIDE_PART_TITLE .or. $HIDE_PART_VALUE)
 
-    { place it on the performance view }
-    move_control ($Attackish,  2, 6)
+    	{ place it on the performance view }
+    	move_control ($Attackish,  2, 6)
 	move_control ($Releasish,5,6)
 
 	set_control_par (get_ui_id($Attackish), $CONTROL_PAR_MOUSE_BEHAVIOUR, -1000)
