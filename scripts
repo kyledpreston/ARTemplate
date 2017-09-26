@@ -19,8 +19,8 @@ on init
     	hide_part($Releasish,  $HIDE_PART_BG .or. $HIDE_PART_MOD_LIGHT .or. $HIDE_PART_TITLE .or. $HIDE_PART_VALUE)
 
     	{ place it on the performance view }
-    	move_control ($Attackish,  2, 6)
-	move_control ($Releasish,5,6)
+    	move_control ($Attackish, 2, 6)
+	move_control ($Releasish, 5, 6)
 
 	set_control_par (get_ui_id($Attackish), $CONTROL_PAR_MOUSE_BEHAVIOUR, -1000)
 	set_control_par (get_ui_id($Releasish), $CONTROL_PAR_MOUSE_BEHAVIOUR, -1000)
